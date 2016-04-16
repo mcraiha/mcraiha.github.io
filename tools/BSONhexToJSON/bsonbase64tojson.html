@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript tool to convert Base64 BSON binary into JSON</title>
+  <script src="bson.js">
+  </script>
+</head>
+<body>
+<script>
+  function myFunction() {
+    var BSON = bson().BSON;
+    
+	// Read text area content
+	var textAreaText = document.getElementById("tarea").value;
+	
+	// Decode Base64 into bytes
+	var rawBytes = window.atob(textAreaText);
+	
+	// Typed Array (Uint8Array) for deserialize call
+	var uintArray = new Uint8Array(rawBytes.length);
+	
+	// Fill Uint8Array from raw bytes
+	for (var i = 0; i < rawBytes.length; i++)
+	{
+		uintArray[i] = rawBytes.charCodeAt(i);
+	}
+	
+    // Deserialize it
+    var doc_2 = BSON.deserialize(uintArray);
+	
+	// Modify HTML content
+	document.getElementById("jsonoutput").innerHTML = JSON.stringify(doc_2, null, 4);
+  }
+</script>
+<div style="text-align: center;">
+	<br>
+	<br>This is a very simple Javascript tool to convert Base64 BSON binary into JSON.
+	<br>(other versions are <a href="bsonfiletojson.html">BSON File to JSON</a> and <a href="bsonhextojson.html">BSON Hex to JSON</a>)
+	<br>
+	<br>BSON deserialization is done via <a href="https://github.com/mongodb/js-bson">https://github.com/mongodb/js-bson</a>
+	<br>
+	<br>Small sample input: <br><b>DwAAABBCbGFoAAEAAAAA</b>
+	<br>
+	<br>More complex input: <br><b>MQAAAARCU09OACYAAAACMAAIAAAAYXdlc29tZQABMQAzMzMzMzMUQBAyAMIHAAAAAA</b>
+	<br><br><br>
+	<textarea id="tarea"></textarea>
+	<br>
+	<button onclick="myFunction()">Base64 BSON binary to JSON</button>
+	<p id="jsonoutput"></p>
+</div>
+</body>
+</html>

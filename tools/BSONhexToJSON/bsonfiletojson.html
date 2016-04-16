@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Javascript tool to convert BSON binary file into JSON</title>
+  <script src="bson.js">
+  </script>
+</head>
+<body>
+<script>
+  function myFunction(event) {
+    var BSON = bson().BSON;
+	
+	var reader = new FileReader();
+	reader.onload = function(event) {
+		// Create array for binary input
+		var uintArray = new Uint8Array(event.target.result);
+		
+		// Deserialize it
+		var doc_2 = BSON.deserialize(uintArray);
+		
+		// Modify HTML content
+		document.getElementById("jsonoutput").innerHTML = JSON.stringify(doc_2, null, 4);
+	};
+	
+	// Assume that there is only one file and use it
+	var file = event.target.files[0];
+	reader.readAsArrayBuffer(file);
+  }
+</script>
+<div style="text-align: center;">
+	<br>
+	<br>This is a very simple Javascript tool to convert BSON binary file into JSON. 
+	<br>(other versions are <a href="bsonbase64tojson.html">BSON Base64 to JSON</a> and <a href="bsonhextojson.html">BSON Hex to JSON</a>)
+	<br>
+	<br>BSON deserialization is done via <a href="https://github.com/mongodb/js-bson">https://github.com/mongodb/js-bson</a>
+	<br>
+	<br>You can download <a href="sample.bson">sample.bson</a> if you don't have any .bson files
+	<br><br>
+	<input type="file" onchange="myFunction(event)"/>
+	<br>
+	<p id="jsonoutput"></p>
+</div>
+</body>
+</html>

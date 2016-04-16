@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <title>Javascript tool to convert BSON hex binary into JSON</title>
   <script src="bson.js">
   </script>
 </head>
@@ -10,18 +12,17 @@
     
 	// Read text area content
 	var textAreaText = document.getElementById("tarea").value;
+	
 	// Remove - from text area content (assuming that there are some)
 	var justHexs = textAreaText.replace(/-/g, "");
-	//console.log(justHexs);
 	
 	// Typed Array (Uint8Array) for deserialize call
-	var uintArray = new Uint8Array(justHexs.length/2);
+	var uintArray = new Uint8Array(justHexs.length / 2);
 	
 	// Fill Uint8Array from hex string
 	for (var i = 0; i < justHexs.length; i = i + 2)
 	{
-		//console.log(parseInt(justHexs.substring(i, i+2), 16));
-		uintArray[i/2] = parseInt(justHexs.substring(i, i+2), 16);
+		uintArray[i/2] = parseInt(justHexs.substring(i, i + 2), 16);
 	}
 	
     // Deserialize it
@@ -31,9 +32,11 @@
 	document.getElementById("jsonoutput").innerHTML = JSON.stringify(doc_2, null, 4);
   }
 </script>
-<div align="center">
+<div style="text-align: center;">
 	<br>
 	<br>This is a very simple Javascript tool to convert BSON hex binary into JSON.
+	<br>(other versions are <a href="bsonfiletojson.html">BSON File to JSON</a> and <a href="bsonbase64tojson.html">BSON Base64 to JSON</a>)
+	<br>
 	<br>BSON deserialization is done via <a href="https://github.com/mongodb/js-bson">https://github.com/mongodb/js-bson</a>
 	<br>
 	<br>Small sample input: <br><b>0F-00-00-00-10-42-6C-61-68-00-01-00-00-00-00</b>
