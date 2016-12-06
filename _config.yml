@@ -1,0 +1,10 @@
+title: mcraiha.github.io
+description: > # this means to ignore newlines until "baseurl:"
+  mcraiha.github.io blog and tools
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  mcraiha
+theme: minima
+
+# Build settings
+
