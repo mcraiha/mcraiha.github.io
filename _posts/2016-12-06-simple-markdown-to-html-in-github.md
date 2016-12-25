@@ -12,7 +12,8 @@ It took me over 3 hours to get Jekyll to run on [Bash on Ubuntu on Windows](http
 
 I would gladly pay for Jekyll like system that would be build without dependencies and could be run in browser/cloud. But AFAIK something like that doesn't exist yet.
 
-As you might know, [GitHub pages](https://pages.github.com/) supports Jekyll, but that support is [very limited](https://help.github.com/articles/configuring-jekyll/), since only safe mode can be used and only supported theme is [Minima](https://github.com/jekyll/minima).
+As you might know, [GitHub pages](https://pages.github.com/) supports Jekyll, ~~but that support is [very limited](https://help.github.com/articles/configuring-jekyll/), since only safe mode can be used and only supported theme is [Minima](https://github.com/jekyll/minima)~~.
+(**UPDATE 25.12.2016:** GitHub [has improved](https://github.com/blog/2295-new-theme-chooser-for-github-pages) the Jekyll support and now there are [13 themes](https://pages.github.com/themes/) supported)
 
 I could build static pages via local Jekyll if I wanted better customization options but since it is too cumbersome, I want to use plain GitHub method (which is using **git** for **.md** files). 
 
