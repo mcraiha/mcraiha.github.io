@@ -15,12 +15,12 @@ This posts uses **rotation** as one of those bit saving optimizations.
 For those who have never dived into science of [signal processing](https://en.wikipedia.org/wiki/Signal_processing), be ready for surprise.
 
 ### Gist
-You can rotate (±90 degrees rotation) an image before compression and get better compression results because of the rotation.
+You can rotate (Â±90 degrees rotation) an image before compression and get better compression results because of the rotation.
 
 ### Proof
 ![Normal black to white fade texture]({{ site.url }}/images/black_to_white_fade.png) ![90 degrees rotated black to white fade texture]({{ site.url }}/images/black_to_white_fade_90.png)
 
-(**left one** is the original image, and it has file size of 7 993 bytes; **right one** is the 90 degrees rotated image, and it has file size of 4 803 bytes)
+(**left one** is the original image, and it has file size of 7 993 bytes; **right one** is the 90 degrees rotated image, and it has file size of 4 803 bytes)
 
 ### How can I apply this to my project
 Rotating images is quite easy. Most image editors offer easy shortcuts that one can use to rotate images.
@@ -36,7 +36,7 @@ Showing the rotated images correctly is bit harder, but if you have full control
 You can also automate the compression step to see if rotation helps with those images you are using. This means that you will create 3 additional versions (90, 180 and 270 degrees of rotation) of the image and see which one has the smallest file size.
 
 ### Why it works
-Reordering of the pixels (that is what ±90 degrees rotation does) means that pixels (or bytes of data) will arrive to the lossless compression in different order. 
+Reordering of the pixels (that is what Â±90 degrees rotation does) means that pixels (or bytes of data) will arrive to the lossless compression in different order. 
 
 Image shown in proof section will benefit from rotation because all the same colored pixels are in one row. And since PNG does compression row by row it can basically say that every pixel in first row is black (well it is not THAT easy, but you get the point).
 
