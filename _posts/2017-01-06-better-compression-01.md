@@ -18,9 +18,10 @@ For those who have never dived into science of [signal processing](https://en.wi
 You can rotate (±90 degrees rotation) an image before compression and get better compression results because of the rotation.
 
 ### Proof
-![Normal black to white fade texture]({{ site.url }}/images/black_to_white_fade.png) ![90 degrees rotated black to white fade texture]({{ site.url }}/images/black_to_white_fade_90.png)
-
-(**left one** is the original image, and it has file size of 7 993 bytes; **right one** is the 90 degrees rotated image, and it has file size of 4 803 bytes)
+|       | Original       | 90 degrees rotated |
+|---------------|---------------|---------------|
+| **Image**|![Normal black to white fade texture]({{ site.url }}/images/black_to_white_fade.png)|![90 degrees rotated black to white fade texture]({{ site.url }}/images/black_to_white_fade_90.png)|
+| **File size** | 7 993 bytes | 4 803 bytes |
 
 ### How can I apply this to my project
 Rotating images is quite easy. Most image editors offer easy shortcuts that one can use to rotate images.
