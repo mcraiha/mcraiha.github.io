@@ -20,7 +20,7 @@ You can rotate (±90 degrees rotation) an image before compression and get bette
 ### Proof
 |    x   | Original       | 90 degrees rotated |
 |---------------|---------------|---------------|
-| **Image**|![Normal black to white fade texture]({{ site.url }}/images/black_to_white_fade.png)|![90 degrees rotated black to white fade texture]({{ site.url }}/images/black_to_white_fade_90.png)|
+| **Image** | ![Normal black to white fade texture]({{ site.url }}/images/black_to_white_fade.png) | ![90 degrees rotated black to white fade texture]({{ site.url }}/images/black_to_white_fade_90.png) |
 | **File size** | 7 993 bytes | 4 803 bytes |
 
 ### How can I apply this to my project
