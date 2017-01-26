@@ -19,10 +19,10 @@ You can rotate (±90 degrees rotation) an image before compression and get bette
 
 ### Proof
 
-|      | Original       | 90 degrees rotated |
-|---------------|---------------|---------------|
+|      | Original       | 90° rotated |
+|:-------------:|:-------------:|:-------------:|
 | **Image** | ![Normal black to white fade texture]({{ site.url }}/images/black_to_white_fade.png) | ![90 degrees rotated black to white fade texture]({{ site.url }}/images/black_to_white_fade_90.png) |
-| **File size** | 7 993 bytes | 4 803 bytes |
+| **File size** | &nbsp; &nbsp;7 993 bytes&nbsp; &nbsp; | &nbsp; &nbsp;4 803 bytes&nbsp; &nbsp; |
 
 ### How can I apply this to my project
 Rotating images is quite easy. Most image editors offer easy shortcuts that one can use to rotate images.
