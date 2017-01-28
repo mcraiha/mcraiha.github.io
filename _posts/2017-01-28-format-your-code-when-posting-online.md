@@ -115,7 +115,7 @@ class Program
 &nbsp;
 
 ## Good way to paste code online
-This award goes to anyone that pastes code with formatting to 
+This award goes to anyone that pastes code with proper formatting and folding to forum/blog/IM.
 
 ```csharp
 using System;
@@ -146,11 +146,11 @@ class Program
 }
 ```
 
-&nbsp;
-
 **Why this is bad:**
 
 * It is hard to directly call that code
+
+&nbsp;
 
 ## Better way to paste code online
 This award goes to anyone that pastes code to gist (or similar service) and links that to the post.
