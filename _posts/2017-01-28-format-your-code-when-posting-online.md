@@ -11,16 +11,20 @@ There are multiple ways to post code online. And most of them should be banned!
 
 Sample code shown in here is copied+pasted from **[Dot Net Perls](https://www.dotnetperls.com/fibonacci)**
 
+&nbsp;
+
 ## The worst(tm) possible way to paste code
 This award goes to anyone that takes a screenshot from badly formatted code and pastes that screenshot to forum/blog/IM.
 
 ![Worst code pasting]({{ site.url }}/images/worst_code_paste.png)
 
 **Why this is bad:**
+
 * It is hard to read the code (neither formatting nor folding)
 * It is hard to copy+paste code
 * It is hard to directly call that code
 
+&nbsp;
 
 ## Bad way to paste code
 This award goes to anyone that takes a screenshot from formatted code and pastes that screenshot to forum/blog/IM.
@@ -28,9 +32,11 @@ This award goes to anyone that takes a screenshot from formatted code and pastes
 ![Bad code pasting]({{ site.url }}/images/bad_code_paste.png)
 
 **Why this is bad:**
+
 * It is hard to copy+paste code
 * It is hard to directly call that code
 
+&nbsp;
 
 ## Horrible way to paste code
 This award goes to anyone that just dumps code to plain textinput. Output is then assumed to be regular text.
@@ -63,8 +69,11 @@ Console.WriteLine(Fibonacci(i));
 }
 
 **Why this is bad:**
+
 * It is hard to read the code (neither formatting nor folding)
 * It is hard to directly call that code
+
+&nbsp;
 
 ## Mediocre way to paste code
 This award goes to anyone that pastes code with folding but does NOT use color coding.
@@ -99,8 +108,11 @@ class Program
 ```
 
 **Why this is bad:**
+
 * It is not easy to read the code
 * It is hard to directly call that code
+
+&nbsp;
 
 ## Good way to paste code online
 This award goes to anyone that pastes code with formatting to 
@@ -134,7 +146,10 @@ class Program
 }
 ```
 
+&nbsp;
+
 **Why this is bad:**
+
 * It is hard to directly call that code
 
 ## Better way to paste code online
