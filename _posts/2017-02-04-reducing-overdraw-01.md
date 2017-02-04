@@ -27,3 +27,4 @@ So tip is that you [trim/crop](https://en.wikipedia.org/wiki/Cropping_(image)) t
 
 ## Live sample
 
+You can view and edit a [Three.js demo]({{ site.url }}/demos/three-js/overdraw_01/index.html?edit) that shows two rotating stars. Left one is NOT cropped and right one is cropped.
