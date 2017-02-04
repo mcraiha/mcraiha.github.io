@@ -6,7 +6,7 @@ categories: overdraw texture reduce tip trim crop
 ---
 # Reducing overdraw, tip #1
 
-This post is simple and short. I give one example that developers/artist can use to reduce [overdraw](https://en.wikipedia.org/wiki/Fillrate) in their app/website/game.
+This post is simple and short. I give one example that developers/artists can use to reduce [overdraw](https://en.wikipedia.org/wiki/Fillrate) in their app/website/game.
 
 &nbsp;
 
