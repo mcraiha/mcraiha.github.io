@@ -10,7 +10,6 @@ This page is index for some of the coding related content I have produced.
 - [{{ post.title }}]({{ post.url }})
 {% endfor %}
 - Things that can muddle your replay feature (upcoming)
-- Tips for reducing overdraw penalties (upcoming)
 &nbsp;  
 &nbsp;
 
@@ -22,4 +21,4 @@ This page is index for some of the coding related content I have produced.
 &nbsp;
 
 #### Latest update of this index
-4th of February 2017
+5th of February 2017
