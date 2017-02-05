@@ -21,6 +21,7 @@ So tip is that you [trim/crop](https://en.wikipedia.org/wiki/Cropping_(image)) t
 ## Static sample
 
 ![Comparison with normal and trimmed]({{ site.url }}/images/side_trim_withshow.png)
+
 (on the left side is the original 256x256 texture (65536 pixels), on the right side is new 157x157 texture (24649 pixels) and that means new texture will reduce over 40000 overdraw operations)
 
 &nbsp;
