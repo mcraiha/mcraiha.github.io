@@ -257,6 +257,7 @@ With massive CSV / TSV files, you should target for sparse presentation. That me
 Below are [examples](https://docs.google.com/spreadsheets/d/1PTqUD58UWJVy3u8z7y5tX-XsXRwu4jH_4fSbdsw2Aqw/pubhtml) from sparse vs. dense
 
 ![Sparse vs. dense spreadsheet]({{ site.url }}/images/csv_sparse_vs_dense.png)
+
 (empty cells in sparse are highlighted with pink color)
 
 &nbsp;
@@ -273,10 +274,13 @@ Also make sure you set your CSV / TSV parsing locale to match your selection. Ot
 I have already given few examples in this post, but here are additional ones that might inspire you
 
 [Game map](https://docs.google.com/spreadsheets/d/1iu3APNmzJO-uRZdmNVzRp49PyDd4gcJ5iZpfJTnTQFY/edit?usp=sharing)
+
 ![Game map spreadsheet]({{ site.url }}/images/csv_map_cells.png)
 
 [Medal times](https://docs.google.com/spreadsheets/d/1uZLF3JT86n5QwcFAWzX3UH8RL2u34vv1WGlv_lQFp4U/edit?usp=sharing)
+
 ![Medal times spreadsheet]({{ site.url }}/images/csv_medal_times.png)
 
 [Shop values](https://docs.google.com/spreadsheets/d/1dJl6JIQzEaMIuV0KfCNf5ITQfdsk64_tMqPrYMvfFus/edit?usp=sharing)
+
 ![Shop values spreadsheet]({{ site.url }}/images/csv_shop_values.png)
