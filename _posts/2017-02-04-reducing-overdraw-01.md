@@ -29,3 +29,6 @@ So tip is that you [trim/crop](https://en.wikipedia.org/wiki/Cropping_(image)) t
 ## Live sample
 
 You can view and edit a [Three.js demo]({{ site.url }}/demos/three-js/overdraw_01/index.html?edit) that shows two rotating stars. Left one is NOT cropped and right one is cropped.
+
+** Update **
+Better live sample made with Babylon.js can be found from [here]({{ site.url }}/demos/babylon-js/babylon-js_avoid_overdraw_example_01.html)
