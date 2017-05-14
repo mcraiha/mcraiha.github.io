@@ -7,7 +7,7 @@ This page is index for some of the coding related content I have produced.
 
 ## Blog posts
 {% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }})
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date_to_string }}
 {% endfor %}
 - Things that can muddle your replay feature (upcoming)
 &nbsp;  
@@ -21,4 +21,4 @@ This page is index for some of the coding related content I have produced.
 &nbsp;
 
 #### Latest update of this index
-1st of May 2017
+14th of May 2017
