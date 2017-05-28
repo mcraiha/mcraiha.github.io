@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <title>Babylon.js sample code accurate meshes overdraw</title>
+        <!-- Babylon.js -->
+        <script src="http://www.babylonjs.com/hand.minified-1.2.js"></script>
+        <script src="http://www.babylonjs.com/babylon.js"></script>
+        <style>
+            html, body {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+        </style>
+    </head>
+<body>
+    <div id="canvasZone">
+        <canvas id="renderCanvas"></canvas>
+    </div>
+	<button type="button" id="myBtn" style="margin-left: 50%">Start/stop animation</button>
+    <script>
+        var canvas = document.getElementById("renderCanvas");
+        var engine = new BABYLON.Engine(canvas, true);
+		
+		var doAnimation = true;
+		
+		document.getElementById("myBtn").onclick = function() { doAnimation = !doAnimation;};
+
+        var createScene = function () {
+        
+            var scene = new BABYLON.Scene(engine);
+        
+            var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0, BABYLON.Vector3.Zero(), scene);
+            camera.setPosition(new BABYLON.Vector3(0, 0, -10));
+            //camera.attachControl(canvas, true);
+        
+            BABYLON.Effect.ShadersStore["customVertexShader"]= `   
+        		precision highp float;
+            	// Attributes
+            	attribute vec3 position;
+                attribute vec3 normal;
+            	attribute vec2 uv;
+            	// Uniforms
+            	uniform mat4 worldViewProjection;
+                
+            	// Varying
+            	varying vec2 vUV;
+            	void main(void) {
+                    vec3 p = position;
+            	    gl_Position = worldViewProjection * vec4(p, 1.0);
+            	    vUV = uv;
+            	}`;
+        
+            BABYLON.Effect.ShadersStore["customFragmentShader"]=`
+        	    precision highp float;
+                varying vec2 vUV;
+            	uniform sampler2D textureSampler;
+                uniform float time;
+                uniform float noiseLimit;
+        
+                float poltergeist(vec2 coordinate, float seed)
+                {
+                    return fract(sin(dot(coordinate*seed, vec2(12.9898, 78.233)))*43758.5453);
+                }
+        
+            	void main(void) {
+                    vec4 texturePixel = texture2D(textureSampler, vUV);
+                    if (texturePixel.a < noiseLimit)
+                    {
+                        //texturePixel = vec4(1.0, 0.0, 0.0, 1.0);
+                        texturePixel = vec4(poltergeist(vUV, time));
+                    }
+            	    gl_FragColor = texturePixel;
+            	}`;
+        
+            var shaderMaterial = new BABYLON.ShaderMaterial("shader", scene, {
+                vertex: "custom",
+                fragment: "custom",
+        	    },
+                {
+        			attributes: ["position", "normal", "uv"],
+        			uniforms: ["world", "worldView", "worldViewProjection", "view", "projection"]
+                });
+        
+            var mainTexture = new BABYLON.Texture("textures/accurate_lightning.png", scene);
+            mainTexture.hasAlpha = true;
+        
+            shaderMaterial.setTexture("textureSampler", mainTexture);
+            shaderMaterial.needAlphaBlending = function () { return true; };
+            //shaderMaterial.needAlphaTesting = true;
+            shaderMaterial.backFaceCulling = false;
+        
+            var planeSize = 2.25;
+        
+            var plane1 = BABYLON.Mesh.CreatePlane("plane1", planeSize, scene);
+            plane1.material = shaderMaterial;
+        
+            var wireframeMaterial = new BABYLON.StandardMaterial("wireframe", scene);
+            wireframeMaterial.diffuseColor = new BABYLON.Color3(1.0, 1.0, 1.0);
+            wireframeMaterial.wireframe = true;
+        
+            var plane1wireframe = BABYLON.Mesh.CreatePlane("plane1wireframe", planeSize, scene);
+            plane1wireframe.material = wireframeMaterial;
+        
+            //Create a custom mesh  
+        	var customMeshPlane2 = new BABYLON.Mesh("customplane", scene);
+        
+            var positions = [
+			// 1st triangle and 2nd triangle
+			-1.0 + (2/256) * 2, 1.0 - (47/256) * 2, 0,   
+			-1.0 + (97/256) * 2, 1.0 - (1/256) * 2, 0,   
+			-1.0 + (86/256) * 2, 1.0 - (99/256) * 2, 0,
+			
+			// 2nd triangle
+			-1.0 + (143/256) * 2, 1.0 - (71/256) * 2, 0,  
+			
+			// 3rd triangle and 4th triangle
+			-1.0 + (58/256) * 2, 1.0 - (114/256) * 2, 0,  
+			-1.0 + (128/256) * 2, 1.0 - (81/256) * 2, 0,   
+			-1.0 + (138/256) * 2, 1.0 - (162/256) * 2, 0,
+			
+			// 4th triangle
+			-1.0 + (188/256) * 2, 1.0 - (140/256) * 2, 0,
+			
+			// 5th triangle
+			-1.0 + (114/256) * 2, 1.0 - (174/256) * 2, 0,  
+			-1.0 + (169/256) * 2, 1.0 - (151/256) * 2, 0,   
+			-1.0 + (245/256) * 2, 1.0 - (252/256) * 2, 0
+			];
+			
+        	var indices = [
+			// 1st triangle
+			0, 1, 2, 
+			
+			// 2nd triangle
+			1, 3, 2,
+			
+			// 3rd triangle
+			4, 5, 6,
+			
+			// 4th triangle
+			5, 7, 6,
+			
+			// 5th triangle
+			8, 9, 10
+			];
+        
+            // UVs are set manually for this demo
+        	var uvs = [
+			// 1st triangle and 2nd triangle
+			2/256, (256-47)/256,    
+			97/256, (256-1)/256,   
+			86/256, (256-99)/256,
+			
+			// 2nd triangle
+			143/256, (256-71)/256,
+			
+			// 3rd triangle and 4th triangle
+			58/256, (256-114)/256,   
+			128/256, (256-81)/256,
+			138/256, (256-162)/256,
+			
+			// 4th triangle
+			188/256, (256-140)/256,
+			
+			// 5th triangle
+			114/256, (256-174)/256,   
+			169/256, (256-151)/256,
+			245/256, (256-252)/256
+			];
+        
+            var vertexData = new BABYLON.VertexData();
+            vertexData.positions = positions;
+        	vertexData.indices = indices;
+        	vertexData.uvs = uvs;
+        
+            vertexData.applyToMesh(customMeshPlane2);
+        
+            customMeshPlane2.material = shaderMaterial;
+        
+        
+            var customWireframe2 = new BABYLON.Mesh("plane2wireframe", scene);
+            vertexData.applyToMesh(customWireframe2);
+            customWireframe2.material = wireframeMaterial;
+			customWireframe2.position.z = -0.1;
+        
+            // Animation modifiers
+            var fromLeftToRightRange = 3;
+            var time = 0.;
+            var limit = 0.004;
+        
+            scene.registerBeforeRender(function() {
+                plane1.material.setFloat("time", time);
+                plane1.material.setFloat("noiseLimit", limit);
+				
+				if (doAnimation)
+				{
+					time += 0.0075;
+				}
+        
+                plane1.rotation.z = -time;
+                plane1wireframe.rotation.z = -time;
+        
+                plane1.position.x = Math.cos(time) * fromLeftToRightRange;
+                plane1wireframe.position.x = Math.cos(time) * fromLeftToRightRange;
+        
+				customMeshPlane2.rotation.z = -time;
+				customWireframe2.rotation.z = -time;
+		
+                customMeshPlane2.position.x = Math.cos(time) * -fromLeftToRightRange;
+                customWireframe2.position.x = Math.cos(time) * -fromLeftToRightRange;
+            });
+        
+        	return scene;
+        };
+        
+        var scene = createScene();
+
+        engine.runRenderLoop(function () {
+            scene.render();
+        });
+
+        // Resize
+        window.addEventListener("resize", function () {
+            engine.resize();
+        });
+    </script>
+</body>
+</html>
