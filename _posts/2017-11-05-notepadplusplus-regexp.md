@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Notepad++ and regexp"
-date:   2017-04-23 10:55:00 +0200
+date:   2017-11-05 20:25:00 +0200
 categories: notepad++ notepadplusplus regex regexp regular expression
 ---
 Since regular Windows installation is missing lots of handy tools, it is usually easier to use existing GUI tools for certain tasks. This time the combo is [Notepad++](https://notepad-plus-plus.org/) and [regular expression](https://en.wikipedia.org/wiki/Regular_expression).
