@@ -21,4 +21,4 @@ This page is index for some of the coding related content I have produced.
 &nbsp;
 
 #### Latest update of this index
-5th of Nov 2017
+22th of Jul 2018
