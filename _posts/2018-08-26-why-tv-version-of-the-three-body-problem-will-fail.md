@@ -12,9 +12,9 @@ A science fiction novel called [The Three-Body Problem](https://en.wikipedia.org
 
 This year (2018) there were some [news](https://www.vanityfair.com/hollywood/2018/03/amazon-billion-the-three-body-problem) that said **Amazon** will make a TV show from it. This blog post contains my small notes about why the show will fail.
 
-## Deginition of fail
+## Definition of fail
 1. Won't be faithful adaption of the book
-2. Will contain bad CGI
+2. Will contain bad [CGI](https://en.wikipedia.org/wiki/Computer-generated_imagery)
 3. Won't convey ideas of the book correctly
 
 ## The biggest problem: China
