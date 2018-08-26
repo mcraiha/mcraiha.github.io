@@ -3,7 +3,7 @@ title: Main Page
 layout: page
 ---
 
-This page is index for some of the coding related content I have produced.
+This page is index for some of the coding/computer/pop culture related content I have produced.
 
 ## Blog posts
 {% for post in site.posts %}
@@ -21,4 +21,4 @@ This page is index for some of the coding related content I have produced.
 &nbsp;
 
 #### Latest update of this index
-22th of Jul 2018
+26th of Aug 2018
