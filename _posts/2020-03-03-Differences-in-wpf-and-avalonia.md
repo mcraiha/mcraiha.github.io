@@ -53,3 +53,15 @@ public bool WizardVisibility
     }
 }
 ```
+
+## Label vs, TextBlock
+
+In WPF you can show text in window with `Label` control. Avalonia does not have that, so you have to use `TextBlock` instead. And `Content` becomes `Text`.
+
+```xml
+<Label Content="Length of generated password:" Margin="2,5,2,2" />
+```
+vs.
+```xml
+<TextBlock Text="Length of generated password:" Margin="2,5,2,2" />
+```
