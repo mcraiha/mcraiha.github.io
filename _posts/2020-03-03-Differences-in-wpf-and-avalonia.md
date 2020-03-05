@@ -54,7 +54,7 @@ public bool WizardVisibility
 }
 ```
 
-## Label vs, TextBlock
+## Label vs. TextBlock
 
 In WPF you can show text in window with `Label` control. Avalonia does not have that, so you have to use `TextBlock` instead. And `Content` becomes `Text`.
 
@@ -64,4 +64,16 @@ In WPF you can show text in window with `Label` control. Avalonia does not have 
 vs.
 ```xml
 <TextBlock Text="Length of generated password:" Margin="2,5,2,2" />
+```
+
+## Clipboard vs. Application.Current.Clipboard
+
+With WPF you can copy text to clipboard with `Clipboard.SetText` but with Avalonia you have to use `Application.Current.Clipboard.SetTextAsync` (and you should do `await` since it is an async method)
+
+```csharp
+Clipboard.SetText("A nice text");
+```
+vs.
+```csharp
+Application.Current.Clipboard.SetTextAsync("A nice text");
 ```

@@ -21,4 +21,4 @@ This page is index for some of the coding/computer/pop culture related content I
 &nbsp;
 
 #### Latest update of this index
-4th of Mar 2020
+5th of Mar 2020
