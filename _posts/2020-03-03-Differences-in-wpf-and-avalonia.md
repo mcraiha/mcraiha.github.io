@@ -77,3 +77,20 @@ vs.
 ```csharp
 Application.Current.Clipboard.SetTextAsync("A nice text");
 ```
+
+## ShowDialog needs owner
+
+Going with WPF, one can show modal window with `ShowDialog`. Avalonia also has ShowDialog, but it needs to know owner when called. Luckily you can figure out the main window with some additional code. 
+
+```csharp
+CreatePasswordWindow passwordWindow = new CreatePasswordWindow(null);
+passwordWindow.ShowDialog();
+```
+vs.
+```csharp
+CreatePasswordWindow passwordWindow = new CreatePasswordWindow();
+if (Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktopLifetime)
+{
+    passwordWindow.ShowDialog(desktopLifetime.MainWindow);
+}
+```
