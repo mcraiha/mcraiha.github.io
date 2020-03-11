@@ -94,3 +94,23 @@ if (Application.Current.ApplicationLifetime is IClassicDesktopStyleApplicationLi
     passwordWindow.ShowDialog(desktopLifetime.MainWindow);
 }
 ```
+
+## FindControl is needed for x:Name
+
+In WPF universe using controls created in XAML via code is quite easy, if you just give those controls `x:Name`. But *"Unfortunately, Avalonia XAML rendering engine won't generate strongly typed x:Name references to controls"* so in Avalonia you have to use `FindControl` instead.
+
+So if XAML part would be following
+```xml
+<TextBlock Text="Hello, world!" x:Name="MyTextBlock" />
+```
+
+then in WPF you would do
+```csharp
+MyTextBlock.Text = "New Text";
+```
+
+but in Avalonia it would be
+```csharp
+TextBlock textBlock = this..FindControl<TextBlock>("MyTextBlock");
+textBlock.Text = "New Text";
+```
