@@ -114,3 +114,17 @@ but in Avalonia it would be
 TextBlock textBlock = this..FindControl<TextBlock>("MyTextBlock");
 textBlock.Text = "New Text";
 ```
+
+## VerticalScrollBarVisibility is known as ScrollViewer.VerticalScrollBarVisibility
+
+Your WPF project might use `VerticalScrollBarVisibility` with `TextBox`. In your Avalonia project that would be `ScrollViewer.VerticalScrollBarVisibility`.
+
+So XAML in WPF would be
+```xml
+<TextBox Name="notes" VerticalScrollBarVisibility="Visible" />
+```
+
+and in Avalonia it would be
+```xml
+<TextBox Name="notes" ScrollViewer.VerticalScrollBarVisibility="Visible" />
+```
