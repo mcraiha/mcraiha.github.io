@@ -25,33 +25,33 @@ Every boss room should have photo booth, also cold room (where the penguins are)
 ![Outside mansion booth]({{ site.url }}/images/outside_mansion_booth_horace_game.jpg)
 
 ## Mainland
-![Mainland booth]({{ site.url }}/images/mainland_booth_horace_game.jpg)
+![Mainland booth]({{ site.url }}/images/mainland_booth_horace_game.jpg)  
 It is near Silton's house
 
-![Mainland hats]({{ site.url }}/images/mainland_hats_horace_game.jpg)
+![Mainland hats]({{ site.url }}/images/mainland_hats_horace_game.jpg)  
 Located next to photo booth, just go inside the door
 
 ## Mainton 
-![Mainton booth]({{ site.url }}/images/mainton_booth_horace_game.jpg)
+![Mainton booth]({{ site.url }}/images/mainton_booth_horace_game.jpg)  
 In the center of city
 
 ## Factoryton
-![Factoryton booth]({{ site.url }}/images/factoryton_booth_horace_game.jpg)
+![Factoryton booth]({{ site.url }}/images/factoryton_booth_horace_game.jpg)  
 On train platform
 
-![Factoryton hats]({{ site.url }}/images/factoryton_hats_horace_game.jpg)
+![Factoryton hats]({{ site.url }}/images/factoryton_hats_horace_game.jpg)  
 Inside the automation building
 
 ## Big city
-![Big city booth]({{ site.url }}/images/big_city_booth_horace_game.jpg)
+![Big city booth]({{ site.url }}/images/big_city_booth_horace_game.jpg)  
 Next to ticket selling machines
 
-![Big city hats]({{ site.url }}/images/big_city_hats_horace_game.jpg)
+![Big city hats]({{ site.url }}/images/big_city_hats_horace_game.jpg)  
 Next to big BCT building
 
 ## Sitcombe
-![Sitcombe booth]({{ site.url }}/images/sitcombe_booth_horace_game.jpg)
+![Sitcombe booth]({{ site.url }}/images/sitcombe_booth_horace_game.jpg)  
 In the center of city
 
-![Sitcombe hats]({{ site.url }}/images/sitcombe_hats_horace_game.jpg)
+![Sitcombe hats]({{ site.url }}/images/sitcombe_hats_horace_game.jpg)  
 Go right and inside a small white house
