@@ -22,7 +22,9 @@ Luckily there are other big name game companies left, so our next example comes 
 
 ## Example 2. Brawl Stars
 
-**Brawl Stars** is a game made and published by **Supercell**. They only show App Tracking Transparency prompt when you try to use Facebook login first time. If you opt out from tracking, the Facebook login won't work (and you cannot make it work anymore unless you delete the app and install it again). That seems somewhat reasonable. So we tried exactly same approach (we even copied the ATT text from Brawl Stars to follow their example).
+**Brawl Stars** is a game made and published by **Supercell**. They only show App Tracking Transparency prompt when you try to use Facebook login first time. If you opt out from tracking, the Facebook login won't work (and you cannot make it work anymore unless you delete the app and install it again). That seems somewhat reasonable. So we tried exactly same approach (we even copied the ATT text from Brawl Stars (minus the Super Cell ID part) to follow their example).
+
+![Brawl Stars ATT]({{ site.url }}/images/att_brawl_stars.jpg)  
 
 As you can guess, Apple rejected that also. This time Apple said that developers cannot disable features if player opts out from tracking. Again, a lottery.
 
