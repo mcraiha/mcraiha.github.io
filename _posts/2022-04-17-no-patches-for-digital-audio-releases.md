@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "No patches for digital audio releases"
-date:   2022-04-17 16:00:00 +0200
+date:   2022-04-17 15:00:00 +0200
 categories: Spotify YouTube Dark Knight Spectre patch Hans Zimmer Sam Smith
 ---
 # No patches for digital audio releases
