@@ -21,7 +21,7 @@ This page is index for some of the coding/computer/pop culture related content I
 &nbsp;
 
 #### Latest update of this index
-11th of Jul 2023
+6th of Nov 2023
 
 #### Contact
 mc 📧 raiha.rocks
