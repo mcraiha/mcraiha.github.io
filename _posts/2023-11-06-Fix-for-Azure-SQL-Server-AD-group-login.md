@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Login failed for user <token-identified principal>"
+title:  "Login failed for user token-identified principal"
 date:   2023-11-06 20:30:00 +0200
 categories: Azure SQL server AD group Entra member owner
 ---
