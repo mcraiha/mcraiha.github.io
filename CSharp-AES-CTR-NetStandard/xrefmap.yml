@@ -13,70 +13,70 @@ references:
   commentId: T:CS_AES_CTR.AES_CTR
   fullName: CS_AES_CTR.AES_CTR
   nameWithType: AES_CTR
-- uid: CS_AES_CTR.AES_CTR.#ctor(System.Byte[],System.Byte[])
-  name: AES_CTR(Byte[], Byte[])
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR__ctor_System_Byte___System_Byte___
-  commentId: M:CS_AES_CTR.AES_CTR.#ctor(System.Byte[],System.Byte[])
-  name.vb: AES_CTR(Byte(), Byte())
-  fullName: CS_AES_CTR.AES_CTR.AES_CTR(System.Byte[], System.Byte[])
-  fullName.vb: CS_AES_CTR.AES_CTR.AES_CTR(System.Byte(), System.Byte())
-  nameWithType: AES_CTR.AES_CTR(Byte[], Byte[])
-  nameWithType.vb: AES_CTR.AES_CTR(Byte(), Byte())
+- uid: CS_AES_CTR.AES_CTR.#ctor(System.Byte[],System.Byte[],System.Boolean)
+  name: AES_CTR(byte[], byte[], bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR__ctor_System_Byte___System_Byte___System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.#ctor(System.Byte[],System.Byte[],System.Boolean)
+  name.vb: New(Byte(), Byte(), Boolean)
+  fullName: CS_AES_CTR.AES_CTR.AES_CTR(byte[], byte[], bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.New(Byte(), Byte(), Boolean)
+  nameWithType: AES_CTR.AES_CTR(byte[], byte[], bool)
+  nameWithType.vb: AES_CTR.New(Byte(), Byte(), Boolean)
+- uid: CS_AES_CTR.AES_CTR.#ctor(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Boolean)
+  name: AES_CTR(ReadOnlySpan<byte>, ReadOnlySpan<byte>, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR__ctor_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Byte__System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.#ctor(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte},System.Boolean)
+  name.vb: New(ReadOnlySpan(Of Byte), ReadOnlySpan(Of Byte), Boolean)
+  fullName: CS_AES_CTR.AES_CTR.AES_CTR(System.ReadOnlySpan<byte>, System.ReadOnlySpan<byte>, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.New(System.ReadOnlySpan(Of Byte), System.ReadOnlySpan(Of Byte), Boolean)
+  nameWithType: AES_CTR.AES_CTR(ReadOnlySpan<byte>, ReadOnlySpan<byte>, bool)
+  nameWithType.vb: AES_CTR.New(ReadOnlySpan(Of Byte), ReadOnlySpan(Of Byte), Boolean)
 - uid: CS_AES_CTR.AES_CTR.#ctor*
   name: AES_CTR
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR__ctor_
   commentId: Overload:CS_AES_CTR.AES_CTR.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: CS_AES_CTR.AES_CTR.AES_CTR
+  fullName.vb: CS_AES_CTR.AES_CTR.New
   nameWithType: AES_CTR.AES_CTR
-- uid: CS_AES_CTR.AES_CTR.allowedCounterLength
-  name: allowedCounterLength
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_allowedCounterLength
-  commentId: F:CS_AES_CTR.AES_CTR.allowedCounterLength
-  fullName: CS_AES_CTR.AES_CTR.allowedCounterLength
-  nameWithType: AES_CTR.allowedCounterLength
-- uid: CS_AES_CTR.AES_CTR.allowedKeyLengths
-  name: allowedKeyLengths
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_allowedKeyLengths
-  commentId: F:CS_AES_CTR.AES_CTR.allowedKeyLengths
-  fullName: CS_AES_CTR.AES_CTR.allowedKeyLengths
-  nameWithType: AES_CTR.allowedKeyLengths
-- uid: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[])
-  name: DecryptBytes(Byte[])
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_System_Byte___
-  commentId: M:CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[])
-  name.vb: DecryptBytes(Byte())
-  fullName: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[])
-  fullName.vb: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte())
-  nameWithType: AES_CTR.DecryptBytes(Byte[])
-  nameWithType.vb: AES_CTR.DecryptBytes(Byte())
-- uid: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Byte[])
-  name: DecryptBytes(Byte[], Byte[])
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_System_Byte___System_Byte___
-  commentId: M:CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Byte[])
-  name.vb: DecryptBytes(Byte(), Byte())
-  fullName: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[], System.Byte[])
-  fullName.vb: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte(), System.Byte())
-  nameWithType: AES_CTR.DecryptBytes(Byte[], Byte[])
-  nameWithType.vb: AES_CTR.DecryptBytes(Byte(), Byte())
-- uid: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Byte[],System.Int32)
-  name: DecryptBytes(Byte[], Byte[], Int32)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_System_Byte___System_Byte___System_Int32_
-  commentId: M:CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Byte[],System.Int32)
-  name.vb: DecryptBytes(Byte(), Byte(), Int32)
-  fullName: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[], System.Byte[], System.Int32)
-  fullName.vb: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte(), System.Byte(), System.Int32)
-  nameWithType: AES_CTR.DecryptBytes(Byte[], Byte[], Int32)
-  nameWithType.vb: AES_CTR.DecryptBytes(Byte(), Byte(), Int32)
-- uid: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Int32)
-  name: DecryptBytes(Byte[], Int32)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_System_Byte___System_Int32_
-  commentId: M:CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Int32)
-  name.vb: DecryptBytes(Byte(), Int32)
-  fullName: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[], System.Int32)
-  fullName.vb: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte(), System.Int32)
-  nameWithType: AES_CTR.DecryptBytes(Byte[], Int32)
-  nameWithType.vb: AES_CTR.DecryptBytes(Byte(), Int32)
+  nameWithType.vb: AES_CTR.New
+- uid: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Boolean)
+  name: DecryptBytes(byte[], bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_System_Byte___System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Boolean)
+  name.vb: DecryptBytes(Byte(), Boolean)
+  fullName: CS_AES_CTR.AES_CTR.DecryptBytes(byte[], bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.DecryptBytes(Byte(), Boolean)
+  nameWithType: AES_CTR.DecryptBytes(byte[], bool)
+  nameWithType.vb: AES_CTR.DecryptBytes(Byte(), Boolean)
+- uid: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Byte[],System.Boolean)
+  name: DecryptBytes(byte[], byte[], bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_System_Byte___System_Byte___System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Byte[],System.Boolean)
+  name.vb: DecryptBytes(Byte(), Byte(), Boolean)
+  fullName: CS_AES_CTR.AES_CTR.DecryptBytes(byte[], byte[], bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.DecryptBytes(Byte(), Byte(), Boolean)
+  nameWithType: AES_CTR.DecryptBytes(byte[], byte[], bool)
+  nameWithType.vb: AES_CTR.DecryptBytes(Byte(), Byte(), Boolean)
+- uid: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Byte[],System.Int32,System.Boolean)
+  name: DecryptBytes(byte[], byte[], int, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_System_Byte___System_Byte___System_Int32_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Byte[],System.Int32,System.Boolean)
+  name.vb: DecryptBytes(Byte(), Byte(), Integer, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.DecryptBytes(byte[], byte[], int, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.DecryptBytes(Byte(), Byte(), Integer, Boolean)
+  nameWithType: AES_CTR.DecryptBytes(byte[], byte[], int, bool)
+  nameWithType.vb: AES_CTR.DecryptBytes(Byte(), Byte(), Integer, Boolean)
+- uid: CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Int32,System.Boolean)
+  name: DecryptBytes(byte[], int, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_System_Byte___System_Int32_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.DecryptBytes(System.Byte[],System.Int32,System.Boolean)
+  name.vb: DecryptBytes(Byte(), Integer, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.DecryptBytes(byte[], int, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.DecryptBytes(Byte(), Integer, Boolean)
+  nameWithType: AES_CTR.DecryptBytes(byte[], int, bool)
+  nameWithType.vb: AES_CTR.DecryptBytes(Byte(), Integer, Boolean)
 - uid: CS_AES_CTR.AES_CTR.DecryptBytes*
   name: DecryptBytes
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptBytes_
@@ -84,12 +84,15 @@ references:
   isSpec: "True"
   fullName: CS_AES_CTR.AES_CTR.DecryptBytes
   nameWithType: AES_CTR.DecryptBytes
-- uid: CS_AES_CTR.AES_CTR.DecryptStream(System.IO.Stream,System.IO.Stream,System.Int32)
-  name: DecryptStream(Stream, Stream, Int32)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptStream_System_IO_Stream_System_IO_Stream_System_Int32_
-  commentId: M:CS_AES_CTR.AES_CTR.DecryptStream(System.IO.Stream,System.IO.Stream,System.Int32)
-  fullName: CS_AES_CTR.AES_CTR.DecryptStream(System.IO.Stream, System.IO.Stream, System.Int32)
-  nameWithType: AES_CTR.DecryptStream(Stream, Stream, Int32)
+- uid: CS_AES_CTR.AES_CTR.DecryptStream(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean)
+  name: DecryptStream(Stream, Stream, int, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptStream_System_IO_Stream_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.DecryptStream(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean)
+  name.vb: DecryptStream(Stream, Stream, Integer, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.DecryptStream(System.IO.Stream, System.IO.Stream, int, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.DecryptStream(System.IO.Stream, System.IO.Stream, Integer, Boolean)
+  nameWithType: AES_CTR.DecryptStream(Stream, Stream, int, bool)
+  nameWithType.vb: AES_CTR.DecryptStream(Stream, Stream, Integer, Boolean)
 - uid: CS_AES_CTR.AES_CTR.DecryptStream*
   name: DecryptStream
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptStream_
@@ -97,12 +100,15 @@ references:
   isSpec: "True"
   fullName: CS_AES_CTR.AES_CTR.DecryptStream
   nameWithType: AES_CTR.DecryptStream
-- uid: CS_AES_CTR.AES_CTR.DecryptStreamAsync(System.IO.Stream,System.IO.Stream,System.Int32)
-  name: DecryptStreamAsync(Stream, Stream, Int32)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptStreamAsync_System_IO_Stream_System_IO_Stream_System_Int32_
-  commentId: M:CS_AES_CTR.AES_CTR.DecryptStreamAsync(System.IO.Stream,System.IO.Stream,System.Int32)
-  fullName: CS_AES_CTR.AES_CTR.DecryptStreamAsync(System.IO.Stream, System.IO.Stream, System.Int32)
-  nameWithType: AES_CTR.DecryptStreamAsync(Stream, Stream, Int32)
+- uid: CS_AES_CTR.AES_CTR.DecryptStreamAsync(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean)
+  name: DecryptStreamAsync(Stream, Stream, int, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptStreamAsync_System_IO_Stream_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.DecryptStreamAsync(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean)
+  name.vb: DecryptStreamAsync(Stream, Stream, Integer, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.DecryptStreamAsync(System.IO.Stream, System.IO.Stream, int, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.DecryptStreamAsync(System.IO.Stream, System.IO.Stream, Integer, Boolean)
+  nameWithType: AES_CTR.DecryptStreamAsync(Stream, Stream, int, bool)
+  nameWithType.vb: AES_CTR.DecryptStreamAsync(Stream, Stream, Integer, Boolean)
 - uid: CS_AES_CTR.AES_CTR.DecryptStreamAsync*
   name: DecryptStreamAsync
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptStreamAsync_
@@ -110,15 +116,15 @@ references:
   isSpec: "True"
   fullName: CS_AES_CTR.AES_CTR.DecryptStreamAsync
   nameWithType: AES_CTR.DecryptStreamAsync
-- uid: CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray(System.Byte[])
-  name: DecryptUTF8ByteArray(Byte[])
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptUTF8ByteArray_System_Byte___
-  commentId: M:CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray(System.Byte[])
-  name.vb: DecryptUTF8ByteArray(Byte())
-  fullName: CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray(System.Byte[])
-  fullName.vb: CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray(System.Byte())
-  nameWithType: AES_CTR.DecryptUTF8ByteArray(Byte[])
-  nameWithType.vb: AES_CTR.DecryptUTF8ByteArray(Byte())
+- uid: CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray(System.Byte[],System.Boolean)
+  name: DecryptUTF8ByteArray(byte[], bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptUTF8ByteArray_System_Byte___System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray(System.Byte[],System.Boolean)
+  name.vb: DecryptUTF8ByteArray(Byte(), Boolean)
+  fullName: CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray(byte[], bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray(Byte(), Boolean)
+  nameWithType: AES_CTR.DecryptUTF8ByteArray(byte[], bool)
+  nameWithType.vb: AES_CTR.DecryptUTF8ByteArray(Byte(), Boolean)
 - uid: CS_AES_CTR.AES_CTR.DecryptUTF8ByteArray*
   name: DecryptUTF8ByteArray
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_DecryptUTF8ByteArray_
@@ -139,42 +145,42 @@ references:
   isSpec: "True"
   fullName: CS_AES_CTR.AES_CTR.Dispose
   nameWithType: AES_CTR.Dispose
-- uid: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[])
-  name: EncryptBytes(Byte[])
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_System_Byte___
-  commentId: M:CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[])
-  name.vb: EncryptBytes(Byte())
-  fullName: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[])
-  fullName.vb: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte())
-  nameWithType: AES_CTR.EncryptBytes(Byte[])
-  nameWithType.vb: AES_CTR.EncryptBytes(Byte())
-- uid: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Byte[])
-  name: EncryptBytes(Byte[], Byte[])
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_System_Byte___System_Byte___
-  commentId: M:CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Byte[])
-  name.vb: EncryptBytes(Byte(), Byte())
-  fullName: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[], System.Byte[])
-  fullName.vb: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte(), System.Byte())
-  nameWithType: AES_CTR.EncryptBytes(Byte[], Byte[])
-  nameWithType.vb: AES_CTR.EncryptBytes(Byte(), Byte())
-- uid: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Byte[],System.Int32)
-  name: EncryptBytes(Byte[], Byte[], Int32)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_System_Byte___System_Byte___System_Int32_
-  commentId: M:CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Byte[],System.Int32)
-  name.vb: EncryptBytes(Byte(), Byte(), Int32)
-  fullName: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[], System.Byte[], System.Int32)
-  fullName.vb: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte(), System.Byte(), System.Int32)
-  nameWithType: AES_CTR.EncryptBytes(Byte[], Byte[], Int32)
-  nameWithType.vb: AES_CTR.EncryptBytes(Byte(), Byte(), Int32)
-- uid: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Int32)
-  name: EncryptBytes(Byte[], Int32)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_System_Byte___System_Int32_
-  commentId: M:CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Int32)
-  name.vb: EncryptBytes(Byte(), Int32)
-  fullName: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[], System.Int32)
-  fullName.vb: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte(), System.Int32)
-  nameWithType: AES_CTR.EncryptBytes(Byte[], Int32)
-  nameWithType.vb: AES_CTR.EncryptBytes(Byte(), Int32)
+- uid: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Boolean)
+  name: EncryptBytes(byte[], bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_System_Byte___System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Boolean)
+  name.vb: EncryptBytes(Byte(), Boolean)
+  fullName: CS_AES_CTR.AES_CTR.EncryptBytes(byte[], bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.EncryptBytes(Byte(), Boolean)
+  nameWithType: AES_CTR.EncryptBytes(byte[], bool)
+  nameWithType.vb: AES_CTR.EncryptBytes(Byte(), Boolean)
+- uid: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Byte[],System.Boolean)
+  name: EncryptBytes(byte[], byte[], bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_System_Byte___System_Byte___System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Byte[],System.Boolean)
+  name.vb: EncryptBytes(Byte(), Byte(), Boolean)
+  fullName: CS_AES_CTR.AES_CTR.EncryptBytes(byte[], byte[], bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.EncryptBytes(Byte(), Byte(), Boolean)
+  nameWithType: AES_CTR.EncryptBytes(byte[], byte[], bool)
+  nameWithType.vb: AES_CTR.EncryptBytes(Byte(), Byte(), Boolean)
+- uid: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Byte[],System.Int32,System.Boolean)
+  name: EncryptBytes(byte[], byte[], int, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_System_Byte___System_Byte___System_Int32_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Byte[],System.Int32,System.Boolean)
+  name.vb: EncryptBytes(Byte(), Byte(), Integer, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.EncryptBytes(byte[], byte[], int, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.EncryptBytes(Byte(), Byte(), Integer, Boolean)
+  nameWithType: AES_CTR.EncryptBytes(byte[], byte[], int, bool)
+  nameWithType.vb: AES_CTR.EncryptBytes(Byte(), Byte(), Integer, Boolean)
+- uid: CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Int32,System.Boolean)
+  name: EncryptBytes(byte[], int, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_System_Byte___System_Int32_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.EncryptBytes(System.Byte[],System.Int32,System.Boolean)
+  name.vb: EncryptBytes(Byte(), Integer, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.EncryptBytes(byte[], int, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.EncryptBytes(Byte(), Integer, Boolean)
+  nameWithType: AES_CTR.EncryptBytes(byte[], int, bool)
+  nameWithType.vb: AES_CTR.EncryptBytes(Byte(), Integer, Boolean)
 - uid: CS_AES_CTR.AES_CTR.EncryptBytes*
   name: EncryptBytes
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptBytes_
@@ -182,12 +188,15 @@ references:
   isSpec: "True"
   fullName: CS_AES_CTR.AES_CTR.EncryptBytes
   nameWithType: AES_CTR.EncryptBytes
-- uid: CS_AES_CTR.AES_CTR.EncryptStream(System.IO.Stream,System.IO.Stream,System.Int32)
-  name: EncryptStream(Stream, Stream, Int32)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptStream_System_IO_Stream_System_IO_Stream_System_Int32_
-  commentId: M:CS_AES_CTR.AES_CTR.EncryptStream(System.IO.Stream,System.IO.Stream,System.Int32)
-  fullName: CS_AES_CTR.AES_CTR.EncryptStream(System.IO.Stream, System.IO.Stream, System.Int32)
-  nameWithType: AES_CTR.EncryptStream(Stream, Stream, Int32)
+- uid: CS_AES_CTR.AES_CTR.EncryptStream(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean)
+  name: EncryptStream(Stream, Stream, int, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptStream_System_IO_Stream_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.EncryptStream(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean)
+  name.vb: EncryptStream(Stream, Stream, Integer, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.EncryptStream(System.IO.Stream, System.IO.Stream, int, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.EncryptStream(System.IO.Stream, System.IO.Stream, Integer, Boolean)
+  nameWithType: AES_CTR.EncryptStream(Stream, Stream, int, bool)
+  nameWithType.vb: AES_CTR.EncryptStream(Stream, Stream, Integer, Boolean)
 - uid: CS_AES_CTR.AES_CTR.EncryptStream*
   name: EncryptStream
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptStream_
@@ -195,12 +204,15 @@ references:
   isSpec: "True"
   fullName: CS_AES_CTR.AES_CTR.EncryptStream
   nameWithType: AES_CTR.EncryptStream
-- uid: CS_AES_CTR.AES_CTR.EncryptStreamAsync(System.IO.Stream,System.IO.Stream,System.Int32)
-  name: EncryptStreamAsync(Stream, Stream, Int32)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptStreamAsync_System_IO_Stream_System_IO_Stream_System_Int32_
-  commentId: M:CS_AES_CTR.AES_CTR.EncryptStreamAsync(System.IO.Stream,System.IO.Stream,System.Int32)
-  fullName: CS_AES_CTR.AES_CTR.EncryptStreamAsync(System.IO.Stream, System.IO.Stream, System.Int32)
-  nameWithType: AES_CTR.EncryptStreamAsync(Stream, Stream, Int32)
+- uid: CS_AES_CTR.AES_CTR.EncryptStreamAsync(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean)
+  name: EncryptStreamAsync(Stream, Stream, int, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptStreamAsync_System_IO_Stream_System_IO_Stream_System_Int32_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.EncryptStreamAsync(System.IO.Stream,System.IO.Stream,System.Int32,System.Boolean)
+  name.vb: EncryptStreamAsync(Stream, Stream, Integer, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.EncryptStreamAsync(System.IO.Stream, System.IO.Stream, int, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.EncryptStreamAsync(System.IO.Stream, System.IO.Stream, Integer, Boolean)
+  nameWithType: AES_CTR.EncryptStreamAsync(Stream, Stream, int, bool)
+  nameWithType.vb: AES_CTR.EncryptStreamAsync(Stream, Stream, Integer, Boolean)
 - uid: CS_AES_CTR.AES_CTR.EncryptStreamAsync*
   name: EncryptStreamAsync
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptStreamAsync_
@@ -208,12 +220,15 @@ references:
   isSpec: "True"
   fullName: CS_AES_CTR.AES_CTR.EncryptStreamAsync
   nameWithType: AES_CTR.EncryptStreamAsync
-- uid: CS_AES_CTR.AES_CTR.EncryptString(System.String)
-  name: EncryptString(String)
-  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptString_System_String_
-  commentId: M:CS_AES_CTR.AES_CTR.EncryptString(System.String)
-  fullName: CS_AES_CTR.AES_CTR.EncryptString(System.String)
-  nameWithType: AES_CTR.EncryptString(String)
+- uid: CS_AES_CTR.AES_CTR.EncryptString(System.String,System.Boolean)
+  name: EncryptString(string, bool)
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptString_System_String_System_Boolean_
+  commentId: M:CS_AES_CTR.AES_CTR.EncryptString(System.String,System.Boolean)
+  name.vb: EncryptString(String, Boolean)
+  fullName: CS_AES_CTR.AES_CTR.EncryptString(string, bool)
+  fullName.vb: CS_AES_CTR.AES_CTR.EncryptString(String, Boolean)
+  nameWithType: AES_CTR.EncryptString(string, bool)
+  nameWithType.vb: AES_CTR.EncryptString(String, Boolean)
 - uid: CS_AES_CTR.AES_CTR.EncryptString*
   name: EncryptString
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_EncryptString_
@@ -222,15 +237,30 @@ references:
   fullName: CS_AES_CTR.AES_CTR.EncryptString
   nameWithType: AES_CTR.EncryptString
 - uid: CS_AES_CTR.AES_CTR.Finalize
-  name: Finalize()
+  name: ~AES_CTR()
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_Finalize
   commentId: M:CS_AES_CTR.AES_CTR.Finalize
-  fullName: CS_AES_CTR.AES_CTR.Finalize()
-  nameWithType: AES_CTR.Finalize()
+  name.vb: ''
+  fullName: CS_AES_CTR.AES_CTR.~AES_CTR()
+  fullName.vb: ''
+  nameWithType: AES_CTR.~AES_CTR()
+  nameWithType.vb: ''
 - uid: CS_AES_CTR.AES_CTR.Finalize*
-  name: Finalize
+  name: ~AES_CTR
   href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_Finalize_
   commentId: Overload:CS_AES_CTR.AES_CTR.Finalize
   isSpec: "True"
-  fullName: CS_AES_CTR.AES_CTR.Finalize
-  nameWithType: AES_CTR.Finalize
+  fullName: CS_AES_CTR.AES_CTR.~AES_CTR
+  nameWithType: AES_CTR.~AES_CTR
+- uid: CS_AES_CTR.AES_CTR.allowedCounterLength
+  name: allowedCounterLength
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_allowedCounterLength
+  commentId: F:CS_AES_CTR.AES_CTR.allowedCounterLength
+  fullName: CS_AES_CTR.AES_CTR.allowedCounterLength
+  nameWithType: AES_CTR.allowedCounterLength
+- uid: CS_AES_CTR.AES_CTR.allowedKeyLengths
+  name: allowedKeyLengths
+  href: api/CS_AES_CTR.AES_CTR.html#CS_AES_CTR_AES_CTR_allowedKeyLengths
+  commentId: F:CS_AES_CTR.AES_CTR.allowedKeyLengths
+  fullName: CS_AES_CTR.AES_CTR.allowedKeyLengths
+  nameWithType: AES_CTR.allowedKeyLengths
